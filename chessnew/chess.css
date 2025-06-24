@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eee;
+  margin: 0;
+}
+
+.chess-board {
+  display: grid;
+  grid-template-rows: repeat(8, 60px);
+  border: 2px solid #000;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+.white {
+  background-color:lightcoral;
+}
+
+.black {
+  background-color:lightblue;
+}
+
+.white-pawn {
+  color:white;
+  /* text-shadow: 0 0 1px #000; */
+}
+
+.black-pawn {
+  color:black;
+}
